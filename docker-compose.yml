@@ -3,9 +3,9 @@ services:
   dev-finder-db:
     image: postgres
     restart: always
-    container_name: dev-finder-db
+    container_name: we-collab-db
     ports:
-      - 5432:5432
+      - 5433:5433
     environment:
       POSTGRES_PASSWORD: example
       PGDATA: /data/postgres
